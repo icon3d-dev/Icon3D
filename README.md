@@ -18,8 +18,6 @@ You need two things: the **core engine** (the renderer and the custom element) a
 <script src="https://cdn.jsdelivr.net/gh/icon3d-dev/icon3d@v1.0.0/icon3d-ui.js"></script>
 ```
 
-> **Note:** Replace the CDN URLs above with your final versioned links once the release is published. Until then, you can also just download `icon3d.min.js` and `icon3d-ui.js` from this repo and host them yourself.
-
 The pack file self-registers its icons into the global `Icon3D.models` registry - no manual import. Once loaded, every icon in the pack is available by name.
 
 ---
@@ -36,14 +34,14 @@ Use `<icon-3d>` anywhere in your HTML, just like an `<img>`. Changing attributes
   <script src="https://cdn.jsdelivr.net/gh/icon3d-dev/icon3d@v1.0.0/icon3d-ui.js"></script>
 </head>
 <body>
-  <icon-3d name="cart-plus-r"></icon-3d>
-  <icon-3d name="icon3d-ui-cart" size="128" spin="y" color="#ff5500"></icon-3d>
+<icon-3d name="cart-plus-r"></icon-3d>
+  <icon-3d name="cart-plus-r" size="128" spin="y" color="#ff5500"></icon-3d>
   <icon-3d src="/models/chair.obj" alt="Office chair"></icon-3d>
 </body>
 </html>
 ```
 
-Icon names follow the pattern `icon3d-<pack>-<icon>` - so `cart-plus-r` is the "home" icon in the "ui" pack.
+Each icon is referenced by its `name` (from a pack) or its `src` URL (a custom OBJ file).
 
 ---
 
@@ -87,8 +85,8 @@ Boolean attributes that compose freely - stack as many as you like.
 | `entrance-duration` | 0.1-3.0 | Entrance length in seconds. Default `0.6`. |
 
 ```html
-<icon-3d name="icon3d-ui-cart" pulse bounce></icon-3d>
-<icon-3d name="icon3d-ui-bell" entrance spin="y"></icon-3d>
+<icon-3d name="cart-plus-r" pulse bounce></icon-3d>
+<icon-3d name="cart-plus-r" entrance spin="y"></icon-3d>
 ```
 
 ---
@@ -115,7 +113,7 @@ CSS-pseudo-class-like states for 3D properties, using a prefix: `hover-`, `click
 ```html
 <icon-3d name="cart-plus-r" hover-color="#ff5500" hover-scale="1.2"></icon-3d>
 
-<icon-3d name="icon3d-ui-cart"
+<icon-3d name="cart-plus-r"
   click-color="#00ff88"
   click-scale="1.3"
   click-spin="y"
@@ -180,7 +178,7 @@ Each prefix supports `-color`, `-scale`, `-speed`, and `-spin`. Priority for col
 
 ```html
 <icon-3d name="cart-plus-r" loading="lazy"></icon-3d>
-<icon-3d name="icon3d-ui-cart" tada autoplay="2500"></icon-3d>
+<icon-3d name="cart-plus-r" tada autoplay="2500"></icon-3d>
 ```
 
 ---
