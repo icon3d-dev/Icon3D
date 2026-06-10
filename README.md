@@ -12,10 +12,10 @@ You need two things: the **core engine** (the renderer and the custom element) a
 
 ```html
 <!-- core engine (required) -->
-<script src="https://cdn.jsdelivr.net/gh/icon3d-dev/icon3d@main/icon3d.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/icon3d-dev/icon3d@v1.0.0/icon3d.min.js"></script>
 
 <!-- free UI pack -->
-<script src="https://cdn.jsdelivr.net/gh/icon3d-dev/icon3d@main/icon3d-ui.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/icon3d-dev/icon3d@v1.0.0/icon3d-ui.js"></script>
 ```
 
 > **Note:** Replace the CDN URLs above with your final versioned links once the release is published. Until then, you can also just download `icon3d.min.js` and `icon3d-ui.js` from this repo and host them yourself.
@@ -32,8 +32,8 @@ Use `<icon-3d>` anywhere in your HTML, just like an `<img>`. Changing attributes
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="https://cdn.jsdelivr.net/gh/icon3d-dev/icon3d@main/icon3d.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/icon3d-dev/icon3d@main/icon3d-ui.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/icon3d-dev/icon3d@v1.0.0/icon3d.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/icon3d-dev/icon3d@v1.0.0/icon3d-ui.js"></script>
 </head>
 <body>
   <icon-3d name="cart-plus-r"></icon-3d>
